@@ -1,0 +1,526 @@
+addr: 192.168.0.25:3308
+user: jhs
+password: jhs123
+database: jhs
+#默认节点，所有未在下面列出的表都将派发到这个节点，如果分表的话应该去除
+default: node2
+
+#监控地址
+pprof_addr: 192.168.0.25:6060
+log_level: info
+
+nodes:
+-
+  name: node4
+  down_after_noalive: 3000
+  idle_conns: 160
+  rw_split: true
+  user: boss
+  password: boss123@Db
+  db: dotdotboss
+  master: localhost:3306
+
+-
+  name: node2
+  down_after_noalive: 300
+  idel_conns: 160
+  rw_split: true
+  user: writer
+  password: daigou@123Db
+  db: dotdotbuy
+  master: 192.168.0.25:3306
+
+-
+  name: node3
+  down_after_noalive: 300
+  idel_conns: 160
+  rw_split: true
+  user: writer
+  password: daigou@123Db
+  db: dotdotmall
+  master: 192.168.0.25:3306
+
+rules:
+  -
+    table: mng_manager_menu_lan
+    nodes: [node3]
+  -
+    table:  aci_address_book
+    nodes: [node3]
+  -
+    table:  aci_bonus
+    nodes: [node3]
+  -
+    table:  aci_business
+    nodes: [node3]
+  -
+    table:  aci_currency
+    nodes: [node3]
+  -
+    table:  aci_favorite
+    nodes: [node3]
+  -
+    table:  aci_payment
+    nodes: [node3]
+  -
+    table:  aci_trade_detail
+    nodes: [node3]
+  -
+    table:  aci_trade_partner
+    nodes: [node3]
+  -
+    table:  aci_trade_record
+    nodes: [node3]
+  -
+    table:  aci_trade_record_status
+    nodes: [node3]
+  -
+    table:  aci_trade_record_type
+    nodes: [node3]
+  -
+    table:  aci_user_lock
+    nodes: [node3]
+  -
+    table:  cms_cat
+    nodes: [node3]
+  -
+    table:  cms_cat_lan
+    nodes: [node3]
+  -
+    table:  cms_content
+    nodes: [node3]
+  -
+    table:  cms_content_lan
+    nodes: [node3]
+  -
+    table:  evt_topics
+    nodes: [node3]
+  -
+    table:  evt_topics_cat
+    nodes: [node3]
+  -
+    table:  evt_topics_cat_lan
+    nodes: [node3]
+  -
+    table:  evt_topics_lan
+    nodes: [node3]
+  -
+    table:  evt_topics_product
+    nodes: [node3]
+  -
+    table:  evt_topics_product_cat
+    nodes: [node3]
+  -
+    table:  evt_topics_product_cat_lan
+    nodes: [node3]
+  -
+    table:  evt_topics_template
+    nodes: [node3]
+  -
+    table:  failed_jobs
+    nodes: [node3]
+  -
+    table:  geo_area
+    nodes: [node3]
+  -
+    table:  geo_delivery
+    nodes: [node3]
+  -
+    table:  geo_freight
+    nodes: [node3]
+  -
+    table:  geo_freight_area
+    nodes: [node3]
+  -
+    table:  geo_freight_lan
+    nodes: [node3]
+  -
+    table:  info_consult
+    nodes: [node3]
+  -
+    table:  info_consult_reply
+    nodes: [node3]
+  -
+    table:  migrations
+    nodes: [node3]
+  -
+    table:  mng_inside_remark
+    nodes: [node3]
+  -
+    table:  mng_manager_menu
+    nodes: [node3]
+  -
+    table:  mng_manager_role
+    nodes: [node3]
+  -
+    table:  mng_manager_user
+    nodes: [node3]
+  -
+    table:  odi_cart
+    nodes: [node3]
+  -
+    table:  odi_feedback
+    nodes: [node3]
+  -
+    table:  odi_feedback_img
+    nodes: [node3]
+  -
+    table:  odi_feedback_reply
+    nodes: [node3]
+  -
+    table:  odi_item_track
+    nodes: [node3]
+  -
+    table:  odi_order
+    nodes: [node3]
+  -
+    table:  odi_order_flow
+    nodes: [node3]
+  -
+    table:  odi_order_item
+    nodes: [node3]
+  -
+    table:  odi_order_pkg
+    nodes: [node3]
+  -
+    table:  odi_order_pkg_track
+    nodes: [node3]
+  -
+    table:  odi_order_track
+    nodes: [node3]
+  -
+    table:  odi_pkg_flow
+    nodes: [node3]
+  -
+    table:  pdi_bonus
+    nodes: [node3]
+  -
+    table:  pdi_daigou_product
+    nodes: [node3]
+  -
+    table:  pdi_delivery_template
+    nodes: [node3]
+  -
+    table:  pdi_fee_area
+    nodes: [node3]
+  -
+    table:  pdi_freight_merger
+    nodes: [node3]
+  -
+    table:  pdi_language
+    nodes: [node3]
+  -
+    table:  pdi_pcat_prop
+    nodes: [node3]
+  -
+    table:  pdi_pcat_prop_temp
+    nodes: [node3]
+  -
+    table:  pdi_product
+    nodes: [node3]
+  -
+    table:  pdi_product_cat
+    nodes: [node3]
+  -
+    table:  pdi_product_cat_lan
+    nodes: [node3]
+  -
+    table:  pdi_product_cat_weight
+    nodes: [node3]
+  -
+    table:  pdi_product_desc
+    nodes: [node3]
+  -
+    table:  pdi_product_desc_type
+    nodes: [node3]
+  -
+    table:  pdi_product_field
+    nodes: [node3]
+  -
+    table:  pdi_product_img
+    nodes: [node3]
+  -
+    table:  pdi_product_sku
+    nodes: [node3]
+  -
+    table:  pdi_product_title
+    nodes: [node3]
+  -
+    table:  pdi_product_title_tmp
+    nodes: [node3]
+  -
+    table:  pdi_product_type
+    nodes: [node3]
+  -
+    table:  pdi_prop_alias
+    nodes: [node3]
+  -
+    table:  pdi_prop_custom_pics
+    nodes: [node3]
+  -
+    table:  pdi_prop_name
+    nodes: [node3]
+  -
+    table:  pdi_prop_name_lan
+    nodes: [node3]
+  -
+    table:  pdi_prop_name_lan_temp
+    nodes: [node3]
+  -
+    table:  pdi_prop_name_temp
+    nodes: [node3]
+  -
+    table:  pdi_prop_value
+    nodes: [node3]
+  -
+    table:  pdi_prop_value_lan
+    nodes: [node3]
+  -
+    table:  pdi_prop_value_lan_temp
+    nodes: [node3]
+  -
+    table:  pdi_prop_value_temp
+    nodes: [node3]
+  -
+    table:  pdi_shop
+    nodes: [node3]
+  -
+    table:  pdi_shop_cat
+    nodes: [node3]
+  -
+    table:  pdi_taobao_pcat_prop
+    nodes: [node3]
+  -
+    table:  pdi_taobao_product_cat
+    nodes: [node3]
+  -
+    table:  pdi_tb_product_serialize
+    nodes: [node3]
+  -
+    table:  pdi_top_fee
+    nodes: [node3]
+  -
+    table:  rev_review
+    nodes: [node3]
+  -
+    table:  rev_review_imgs
+    nodes: [node3]
+  -
+    table:  rev_review_reply
+    nodes: [node3]
+  -
+    table:  stg_in
+    nodes: [node3]
+  -
+    table:  stg_out
+    nodes: [node3]
+  -
+    table:  stg_twochecked
+    nodes: [node3]
+  -
+    table:  tsl_combination_template
+    nodes: [node3]
+  -
+    table:  tsl_keys
+    nodes: [node3]
+  -
+    table:  tsl_keyscate
+    nodes: [node3]
+  -
+    table:  tsl_productcate_keys
+    nodes: [node3]
+  -
+    table:  bm_adscost
+    nodes: [node4]
+  -
+    table:  bm_arrival_time
+    nodes: [node4]
+  -
+    table:  bm_average_weight
+    nodes: [node4]
+  -
+    table:  bm_cash_on_delivery
+    nodes: [node4]
+  -
+    table:  bm_cash_on_delivery_daily
+    nodes: [node4]
+  -
+    table:  bm_depotin_daily
+    nodes: [node4]
+  -
+    table:  bm_depotout_daily
+    nodes: [node4]
+  -
+    table:  bm_dianhuo_record
+    nodes: [node4]
+  -
+    table:  bm_edm
+    nodes: [node4]
+  -
+    table:  bm_grouponstats
+    nodes: [node4]
+  -
+    table:  bm_ht_last_reocrd
+    nodes: [node4]
+  -
+    table:  bm_ht_register_detail
+    nodes: [node4]
+  -
+    table:  bm_ht_register_user
+    nodes: [node4]
+  -
+    table:  bm_htmarketing
+    nodes: [node4]
+  -
+    table:  bm_htpackage
+    nodes: [node4]
+  -
+    table:  bm_htpackage_detail
+    nodes: [node4]
+  -
+    table:  bm_htpackage_info
+    nodes: [node4]
+  -
+    table:  bm_htrecharge
+    nodes: [node4]
+  -
+    table:  bm_htrecharge_detail
+    nodes: [node4]
+  -
+    table:  bm_item_refund
+    nodes: [node4]
+  -
+    table:  bm_item_return
+    nodes: [node4]
+  -
+    table:  bm_kf
+    nodes: [node4]
+  -
+    table:  bm_kf_detail
+    nodes: [node4]
+  -
+    table:  bm_kfworkstats
+    nodes: [node4]
+  -
+    table:  bm_last_reocrd
+    nodes: [node4]
+  -
+    table:  bm_login_record
+    nodes: [node4]
+  -
+    table:  bm_login_user
+    nodes: [node4]
+  -
+    table:  bm_mall_zone
+    nodes: [node4]
+  -
+    table:  bm_marketing
+    nodes: [node4]
+  -
+    table:  bm_marketing_bak
+    nodes: [node4]
+  -
+    table:  bm_name_shop
+    nodes: [node4]
+  -
+    table:  bm_order
+    nodes: [node4]
+  -
+    table:  bm_order_alipay
+    nodes: [node4]
+  -
+    table:  bm_order_item_detail
+    nodes: [node4]
+  -
+    table:  bm_order_item_detail_bak
+    nodes: [node4]
+  -
+    table:  bm_order_monthly
+    nodes: [node4]
+  -
+    table:  bm_order_stats
+    nodes: [node4]
+  -
+    table:  bm_order_status
+    nodes: [node4]
+  -
+    table:  bm_pack_daily
+    nodes: [node4]
+  -
+    table:  bm_package
+    nodes: [node4]
+  -
+    table:  bm_package_detail
+    nodes: [node4]
+  -
+    table:  bm_package_info
+    nodes: [node4]
+  -
+    table:  bm_package_refund
+    nodes: [node4]
+  -
+    table:  bm_package_refund_daily
+    nodes: [node4]
+  -
+    table:  bm_packages_track
+    nodes: [node4]
+  -
+    table:  bm_pageviews
+    nodes: [node4]
+  -
+    table:  bm_profit
+    nodes: [node4]
+  -
+    table:  bm_purchaser
+    nodes: [node4]
+  -
+    table:  bm_recharge
+    nodes: [node4]
+  -
+    table:  bm_recharge_detail
+    nodes: [node4]
+  -
+    table:  bm_refund
+    nodes: [node4]
+  -
+    table:  bm_register_detail
+    nodes: [node4]
+  -
+    table:  bm_register_user
+    nodes: [node4]
+  -
+    table:  bm_return
+    nodes: [node4]
+  -
+    table:  bm_return_items
+    nodes: [node4]
+  -
+    table:  bm_statics_arrival
+    nodes: [node4]
+  -
+    table:  bm_total_pageview
+    nodes: [node4]
+  -
+    table:  bm_track
+    nodes: [node4]
+  -
+    table:  bm_transfrom
+    nodes: [node4]
+  -
+    table:  bm_twocheck_daily
+    nodes: [node4]
+  -
+    table:  bos_order_full_refund_detail
+    nodes: [node4]
+  -
+    table:  bos_order_sell_detail
+    nodes: [node4]
+  -
+    table:  bos_product_buy_detail
+    nodes: [node4]
+  -
+    table:  bos_product_pv
+    nodes: [node4]
+  -
+    table:  bos_product_pv_detail
+    nodes: [node4]
