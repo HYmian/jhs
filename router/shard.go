@@ -6,7 +6,7 @@ package router
 
 import (
 	"fmt"
-	"jhs/hack"
+	"github.com/HYmian/jhs/hack"
 	"hash/crc32"
 	"strconv"
 )

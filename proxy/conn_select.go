@@ -3,8 +3,8 @@ package proxy
 import (
 	"bytes"
 	"fmt"
-	. "jhs/mysql"
-	"jhs/sqlparser"
+	. "github.com/HYmian/jhs/mysql"
+	"github.com/HYmian/jhs/sqlparser"
 	"strings"
 )
 

@@ -1,10 +1,10 @@
 package proxy
 
 import (
-	"jhs/client"
-	. "jhs/mysql"
-	"jhs/router"
-	"jhs/sqlparser"
+	"github.com/HYmian/jhs/client"
+	. "github.com/HYmian/jhs/mysql"
+	"github.com/HYmian/jhs/router"
+	"github.com/HYmian/jhs/sqlparser"
 	"sync"
 
 	"github.com/siddontang/go-log/log"

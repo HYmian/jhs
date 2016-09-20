@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/siddontang/go-yaml/yaml"
-	"jhs/config"
+	"github.com/HYmian/jhs/config"
 	"testing"
 )
 

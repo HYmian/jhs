@@ -1,7 +1,7 @@
 package sqlparser
 
 import (
-	"jhs/router"
+	"github.com/HYmian/jhs/router"
 	"strings"
 
 	"github.com/siddontang/go-log/log"

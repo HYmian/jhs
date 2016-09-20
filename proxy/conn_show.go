@@ -2,9 +2,9 @@ package proxy
 
 import (
 	"fmt"
-	"jhs/hack"
-	. "jhs/mysql"
-	"jhs/sqlparser"
+	"github.com/HYmian/jhs/hack"
+	. "github.com/HYmian/jhs/mysql"
+	"github.com/HYmian/jhs/sqlparser"
 	"sort"
 	"strings"
 	"time"

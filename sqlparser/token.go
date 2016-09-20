@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"strings"
 
-	"jhs/sqltypes"
+	"github.com/HYmian/jhs/sqltypes"
 )
 
 const EOFCHAR = 0x100

@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	"jhs/client"
-	"jhs/config"
+	"github.com/HYmian/jhs/client"
+	"github.com/HYmian/jhs/config"
 	"sync"
 	"testing"
 	"time"

@@ -2,7 +2,7 @@ package proxy
 
 import (
 	"fmt"
-	"jhs/sqlparser"
+	"github.com/HYmian/jhs/sqlparser"
 	"strings"
 )
 

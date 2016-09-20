@@ -1,8 +1,8 @@
 package sqlparser
 
 import (
-	"jhs/config"
-	"jhs/router"
+	"github.com/HYmian/jhs/config"
+	"github.com/HYmian/jhs/router"
 
 	"fmt"
 	"testing"

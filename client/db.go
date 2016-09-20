@@ -3,7 +3,7 @@ package client
 import (
 	"container/list"
 	"fmt"
-	. "jhs/mysql"
+	. "github.com/HYmian/jhs/mysql"
 	"sync"
 	"sync/atomic"
 )

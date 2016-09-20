@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	"jhs/client"
-	. "jhs/mysql"
+	"github.com/HYmian/jhs/client"
+	. "github.com/HYmian/jhs/mysql"
 )
 
 func (c *Conn) isInTransaction() bool {

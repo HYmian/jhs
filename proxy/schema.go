@@ -2,7 +2,7 @@ package proxy
 
 import (
 	"fmt"
-	"jhs/router"
+	"github.com/HYmian/jhs/router"
 )
 
 type Schema struct {

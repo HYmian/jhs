@@ -7,7 +7,7 @@ package sqlparser
 import (
 	"testing"
 
-	"jhs/sqltypes"
+	"github.com/HYmian/jhs/sqltypes"
 )
 
 func TestParsedQuery(t *testing.T) {

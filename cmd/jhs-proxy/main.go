@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"jhs/config"
-	"jhs/proxy"
+	"github.com/HYmian/jhs/config"
+	"github.com/HYmian/jhs/proxy"
 	"net/http"
 	_ "net/http/pprof"
 	"os"

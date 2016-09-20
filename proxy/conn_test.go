@@ -1,7 +1,7 @@
 package proxy
 
 import (
-	. "jhs/mysql"
+	. "github.com/HYmian/jhs/mysql"
 	"testing"
 )
 

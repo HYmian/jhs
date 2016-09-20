@@ -3,7 +3,7 @@ package client
 import (
 	"encoding/binary"
 	"fmt"
-	. "jhs/mysql"
+	. "github.com/HYmian/jhs/mysql"
 	"math"
 )
 

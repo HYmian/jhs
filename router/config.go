@@ -2,7 +2,7 @@ package router
 
 import (
 	"fmt"
-	"jhs/config"
+	"github.com/HYmian/jhs/config"
 	"regexp"
 	"strconv"
 	"strings"

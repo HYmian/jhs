@@ -2,8 +2,8 @@ package proxy
 
 import (
 	"fmt"
-	"jhs/hack"
-	. "jhs/mysql"
+	"github.com/HYmian/jhs/hack"
+	. "github.com/HYmian/jhs/mysql"
 	"strconv"
 )
 

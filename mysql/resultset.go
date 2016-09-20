@@ -3,7 +3,7 @@ package mysql
 import (
 	"encoding/binary"
 	"fmt"
-	"jhs/hack"
+	"github.com/HYmian/jhs/hack"
 	"math"
 	"strconv"
 

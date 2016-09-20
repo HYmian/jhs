@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"jhs/sqltypes"
+	"github.com/HYmian/jhs/sqltypes"
 )
 
 type BindLocation struct {

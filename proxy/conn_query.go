@@ -2,11 +2,11 @@ package proxy
 
 import (
 	"fmt"
-	"jhs/client"
-	"jhs/hack"
-	. "jhs/mysql"
-	"jhs/router"
-	"jhs/sqlparser"
+	"github.com/HYmian/jhs/client"
+	"github.com/HYmian/jhs/hack"
+	. "github.com/HYmian/jhs/mysql"
+	"github.com/HYmian/jhs/router"
+	"github.com/HYmian/jhs/sqlparser"
 	"strconv"
 	"strings"
 	"sync"

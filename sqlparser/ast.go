@@ -7,7 +7,7 @@ package sqlparser
 import (
 	"errors"
 
-	"jhs/sqltypes"
+	"github.com/HYmian/jhs/sqltypes"
 )
 
 // Instructions for creating new types: If a type

@@ -9,7 +9,7 @@ package sqlparser
 import (
 	"fmt"
 
-	"jhs/sqltypes"
+	"github.com/HYmian/jhs/sqltypes"
 )
 
 // GetDBName parses the specified DML and returns the

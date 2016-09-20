@@ -2,7 +2,7 @@ package client
 
 import (
 	"fmt"
-	. "jhs/mysql"
+	. "github.com/HYmian/jhs/mysql"
 	"testing"
 )
 

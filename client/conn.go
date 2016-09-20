@@ -5,7 +5,7 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	. "jhs/mysql"
+	. "github.com/HYmian/jhs/mysql"
 	"net"
 	"strings"
 	"time"

@@ -2,8 +2,8 @@ package proxy
 
 import (
 	"fmt"
-	"jhs/client"
-	"jhs/config"
+	"github.com/HYmian/jhs/client"
+	"github.com/HYmian/jhs/config"
 	"sync"
 	"time"
 

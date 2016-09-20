@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"time"
 
-	"jhs/hack"
+	"github.com/HYmian/jhs/hack"
 )
 
 var (

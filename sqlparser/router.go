@@ -5,7 +5,7 @@
 package sqlparser
 
 import (
-	"jhs/router"
+	"github.com/HYmian/jhs/router"
 	"sort"
 	"strconv"
 

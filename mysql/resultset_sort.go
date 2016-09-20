@@ -3,7 +3,7 @@ package mysql
 import (
 	"bytes"
 	"fmt"
-	"jhs/hack"
+	"github.com/HYmian/jhs/hack"
 	"sort"
 )
 
